@@ -1,0 +1,348 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Quinton}{Davidson}{ \urlstyle{same}
+\href{mailto:qtdavidson55@gmail.com}{qtdavidson55@gmail.com} | (410)-830-9775
+\vspace{2mm}
+}\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Objective}
+\texbf{To obtain a software engineering \\
+position within a government agency \\
+to utilize and expand my computer \\
+science and engineering skills\\}
+\section{Links} 
+%Github:// \href{https://github.com/nzbzny}{\bf nzbzny} \\
+LinkedIn:// \href{www.linkedin.com/in/quinton-davidson}{\bf quinton-davidson} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework {\small (Selected)}}
+\subsection{Undergraduate}
+Computer Networks\\
+Computer and Network Security\\
+Operating Systems\\
+Embedded Systems\\
+Computer Organization\\
+Reverse Engineering\\
+Algorithms\\
+Programming Languages\\
+Data Structures\\
+Discrete Structures\\
+%Applied Cybersecurity I \& II\\
+%Analog and Digital Electronics\\
+Digital Logic Design\\
+Cryptography\\
+Calculus I, II\\
+Differential Equations\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+C \textbullet{} C++ \textbullet{} Java \textbullet{} Python
+\textbullet{} Ruby\\
+OCaml \textbullet{} x86, AVR Assembly\\
+MATLAB \textbullet{} Bash \textbullet{} Verilog
+\subsection{Technologies}
+Robot Operating System (ROS)\\
+Ghidra \textbullet{} UNIX/Linux \textbullet{} OpenCV \\
+Arduino \textbullet{} Wireshark \textbullet{} \LaTeX\\
+\sectionsep
+
+\section{Awards}
+Dean's List \textbullet{} Fall 2017 - Fall 2020\\
+Scholarship for Service \textbullet{} 2018\\
+Presidential Scholarship \textbullet{} 2017 - 2018\\
+National Merit Scholarship \textbullet{} 2017
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Organizations} 
+%{\small
+%  \begin{tabular}{@{}lr}
+%    Cybersecurity Competition Team\\
+%    ACES Honors College & Mar 2017\\
+%  \end{tabular}
+%\begin{tabular}{rl}
+%  Nov 2017    & ACM-ICPC Regionals, 19\textsuperscript{th}/152\\
+%  Sep 2017    & National Merit Semifinalist\\
+%  % April 2017  & Botball: Best Engineering Award\\
+%  March 2017  & Hackerrank: 97\textsuperscript{th} \%ile\\
+%\end{tabular}
+%}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+\section{Education} 
+
+\runsubsection{University of Maryland}
+\descript{| BS Computer Engineering}
+\location{\small Expected May 2021 | College Park, MD | Academic Honors | GPA: 3.86 } \vspace{1mm}
+\vspace{\topsep}
+\begin{tightemize}
+\item Scholarship for Service (SFS) – {\small full tuition scholarship awarded from \\National Science Foundation}
+\item {\small Advanced Cybersecurity Experience for Students} (ACES) Honors College
+\end{tightemize}
+%\vspace{-1mm}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Naval Air Systems Command}
+\descript{ \\Engineering and Architect Trainee}
+\location{January 2021, May 2020 - August 2020}
+\begin{tightemize}
+\item Developed code in Python to operate a ten servo pulley system with both programmable and user input control
+\item Prototyped a suitcase sized model of an electronic warfare simulation facility for integrating the pulley system
+\end{tightemize}
+
+\runsubsection{Laboratory for Telecommunication Sciences}
+\descript{ \\Research Intern }
+\location{May 2019 - August 2019}
+\begin{tightemize}
+\item Utilized LIDAR depth images to perform live object detection and tracking on people using a variety of robot arms/turrets
+\item Combined various open source softwares and algorithms into one real-time software pipeline using ROS
+\item Trained a computer vision machine learning model on thousands of custom LIDAR depth images
+\item Presented as a team to high ranking officials within the intelligence community
+\end{tightemize}
+\location{May 2018 - August 2018}
+%\vspace{\topsep}
+\begin{tightemize}
+\item Developed a Python API to communicate with a six-axis industrial robot arm
+\item Utilized a multi-camera system to evaluate sub-millimeter precision of simultaneous localization
+  and mapping (SLAM) algorithms 
+\item Used OpenCV to perform autonomous camera calibration and fiducial marker tracking
+\item Created ROS framework for an autonomous robot platform to perform precision indoor localization
+  and mapping and RF signal finding within GPS-denied environments
+\end{tightemize}
+\sectionsep
+
+\section{Projects}
+\runsubsection{ACES Honeypot Project}
+\location{\\Fall 2018}
+\begin{tightemize}
+\item Implemented and studied several high interaction honeypots to monitor differences in behavior between people on various hacker forums
+\item Wrote Bash and Python scripts to recycle honeypots and maintain a man-in-the-middle (MITM) command/keystroke logger
+\item Performed statistical analysis on attacker behavior between different forums including attack frequency and types of commands run
+\end{tightemize}
+\sectionsep
+%% \runsubsection{Over Sand Vehicle Project - Material Identification}
+%% \descript{ Navigation Subteam Leader }
+%% \location{Jan 2018 - May 2018}
+%\vspace{\topsep}
+%% \begin{tightemize}
+%% \item Collaborated with a group of 8 students to design and build an over sand vehicle (OSV) that autonomously
+%%   located and identified an unknown metal material as Copper or Steel
+%% \item Led navigation subteam in developing the autonomous control algorithm to locate and
+%%   test the unknown sample within time constraints
+%% \item Earned first place among all material identification teams across 12 classes and performed at an
+%%   OSV Competition Showcase
+%% \end{tightemize}
+%%\sectionsep
+
+
+%% \runsubsection{ACES Cybersecurity Competition Team}
+%% %\descript{ \\blah blah blah}
+%% \location{\\Fall 2017, Fall 2018}
+%% \begin{tightemize}
+%% \item Developed and utilized a variety of cybersecurity skills such as cryptology, network traffic analysis, DNS spoofing,
+%%   and password cracking
+%% \item Participated in National Cyber League Competition using skills from club meetings to solve capture the flag problems
+%% \end{tightemize}
+
+%% \sectionsep
+
+%% \runsubsection{MESA Cyber Robot Challenge}
+%% \descript{ \\Team Lead}
+%% \location{Nov 2016 - May 2017}
+%% \begin{tightemize}
+%% \item Developed recursive Python algorithm to autonomously maneuver a virtual robot within a maze
+%% \item Led software development process and weekly meetings to keep team on track in preparation for competition
+%% \item Collaborated with group members to encrypt/decrypt messages using a variety of cyphers 
+%% \end{tightemize}
+
+%% \sectionsep
+
+
+%% \runsubsection{Nexagen Networks Inc.}
+%% \descript{| Information Technology Intern }
+%% \location{July 2015 – Aug 2015}
+%% %\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%% \begin{tightemize}
+%% \item Authored a web-based application for performing statistical analysis of materials of hardware components.
+%% \item Used SQL and Microsoft SQL Server 2012 to edit the database for the application.
+%% \item Led the development of the User Manual for the application.
+%% \item Wrote code in C\# to link the back-end of the application to the front-end of the application.
+
+%% \end{tightemize}
+%% \sectionsep
+
+% \runsubsection{Artisan Data Consulting}
+% \descript{| Technical Intern }
+% \location{June 2016 - Sept 2016}
+% \begin{tightemize}
+% \item Used Git, Maven, JUnit tests. Provided general IT/support, data entry.
+% \item Sped up data entry tasks by over 100\%.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% \section{Projects}
+
+%% \runsubsection{High School Capstone Project}
+%% \descript{- {\small intrusion detection system}}
+%% \location{\href{https://github.com/nzbzny/Capstone}{https://github.com/nzbzny/Capstone}}
+%% {\small
+%%   Used machine learning to create a behavior-based system to detect network intrusions through anomalies in log data.\\
+%%   Used an SSH honeypot for collecting data, and wrote code to collect and parse the data in C++.\\
+%%   Utilized the Random Forest algorithm and the SciPy and scikit-learn Python libraries to analyze the data.\\
+%%   The system was able to correctly classify 84\% of the connections selected for testing as either malicious or benign, and could run autonomously.
+%% }
+%% \sectionsep
+
+% \runsubsection{Spotted}
+% \descript{- {\small Android / iOS app}}
+% \location{\href{https://github.com/CBSkarmory/Spotted}{https://github.com/CBSkarmory/Spotted}}
+% {\small
+%   Co-developed real-time, cross-platform, crowdsourcing application to help connect community outreach organizations to homeless people, using React Native, Firebase, and Expo XDE during HopHacks Fall 2017.
+% }
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%% TEMPLATE %%%%%%%%%%%%%%%%
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%   TEMPLATE    %%%%%%%%%%%%%%%%
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage} 
+\end{document}  \documentclass[]{article}
